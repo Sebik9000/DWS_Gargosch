@@ -50,3 +50,13 @@ show_date_button.addEventListener('click', function() {
   const currentDate = new Date().toLocaleDateString();
   date_output.textContent = `Aktuální datum: ${currentDate}`;
 });
+
+const add_three_button = document.getElementById('add-three');
+const number_result = document.getElementById('number-result');
+
+add_three_button.addEventListener('click', function() {
+  const inputValue = document.getElementById('number-input').value;
+  const number = parseFloat(inputValue);
+  const result = number + 3;
+  number_result.textContent = 'Výsledek: ' + result;
+});
