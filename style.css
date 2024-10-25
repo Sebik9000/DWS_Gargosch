@@ -1,1 +1,40 @@
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#change-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: green;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: blue;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#hover-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: red;
+}
