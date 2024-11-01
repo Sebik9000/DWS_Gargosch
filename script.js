@@ -56,7 +56,27 @@ const number_result = document.getElementById('number-result');
 
 add_three_button.addEventListener('click', function() {
   const inputValue = document.getElementById('number-input').value;
-  const number = parseFloat(inputValue);
+  const number = Number(inputValue);
   const result = number + 3;
   number_result.textContent = 'Výsledek: ' + result;
+});
+
+const add_numbers_button = document.getElementById('add-numbers');
+const secist_result = document.getElementById('secist-result');
+
+add_numbers_button.addEventListener('click', function() {
+  const number1 = Number(document.getElementById('number1-input').value);
+  const number2 = Number(document.getElementById('number2-input').value);
+  const sum = number1 + number2;
+  secist_result.textContent = 'Výsledek: ' + sum;
+});
+
+const pankapcala_image = document.getElementById('pankapcala');
+
+pankapcala_image.addEventListener('mouseover', function() {
+  pankapcala_image.style.width = '400px';
+});
+
+pankapcala_image.addEventListener('mouseout', function() {
+  pankapcala_image.style.width = '200px';
 });
