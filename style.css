@@ -38,3 +38,32 @@ label {
     font-size: 18px;
     color: red;
 }
+
+#pankapcala {
+    width: 200px;
+    height: auto;
+}
+
+/*Bonus Úkol pod tímto komentářem*/
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+
+.image-container:hover .info {
+    display: block;
+}
