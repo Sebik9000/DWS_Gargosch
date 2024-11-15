@@ -69,3 +69,17 @@ label {
 }
 
 /*Úkol v hodině task*/
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+}

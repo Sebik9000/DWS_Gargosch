@@ -80,3 +80,30 @@ pankapcala_image.addEventListener('mouseover', function() {
 pankapcala_image.addEventListener('mouseout', function() {
   pankapcala_image.style.width = '200px';
 });
+
+const taskInput = document.getElementById('taskInput');
+const addTaskButton = document.getElementById('addTaskButton');
+const taskList = document.getElementById('taskList');
+
+addTaskButton.addEventListener('click', function() {
+    const task = taskInput.value.trim();
+    if (task) {
+        const li = document.createElement('li');
+        li.textContent = task;
+
+        li.addEventListener('click', function() {
+            li.classList.toggle('completed');
+        });
+
+        li.addEventListener('dblclick', function() {
+            const newTask = prompt('Edit task:', li.textContent);
+            if (newTask !== null && newTask.trim() !== '') {
+                li.textContent = newTask;
+                li.classList.remove('completed');
+            }
+        });
+
+        taskList.appendChild(li);
+        taskInput.value = '';
+    }
+});
