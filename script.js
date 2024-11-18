@@ -92,14 +92,8 @@ addTaskButton.addEventListener('click', function() {
         li.textContent = task;
 
         li.addEventListener('click', function() {
-            li.classList.toggle('completed');
-        });
-
-        li.addEventListener('dblclick', function() {
-            const newTask = prompt('Edit task:', li.textContent);
-            if (newTask !== null && newTask.trim() !== '') {
-                li.textContent = newTask;
-                li.classList.remove('completed');
+            if (confirm('Chceš odebrat tuhle task?')) {
+                taskList.removeChild(li);
             }
         });
 
